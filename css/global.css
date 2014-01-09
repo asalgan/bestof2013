@@ -22,3 +22,25 @@ header {
   background: black;
   text-align: left;
 }
+
+/*Sections*/
+section {
+  width: auto;
+  padding: 25px;
+  text-align: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 400px;
+}
+
+.alan li {
+  float: left;
+  margin-right: 5%;
+  width: 200px;
+  white-space: nowrap;
+}
+.alan img {
+  height: 200px;
+  width: 200px;
+  margin-left: 5px;
+}
