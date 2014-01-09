@@ -29,7 +29,6 @@ time, mark, audio, video {
   position: relative;
   margin: 0 auto;
   max-width: 960px;
-  font-color: #f7f7f7;
 }
 
 .group:after {
@@ -43,4 +42,5 @@ header {
   top: 0px;
   left: 40px;
   padding: 20px 30px;
+  font-color: #f7f7f7;
 }
