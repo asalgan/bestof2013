@@ -1,0 +1,19 @@
+/* GENERAL */
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  position: absolute;
+  top: 0px;
+  left: 40px;
+  padding: 20px 30px;
+}
