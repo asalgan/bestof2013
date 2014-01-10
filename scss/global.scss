@@ -40,6 +40,7 @@ header {
 
 	h2 {
 		font-size: 24pt;
+		font-family: "Trebuchet-MS", Helvetica, sans-serif;
 		padding: 5px;
 	}
 }
@@ -52,7 +53,7 @@ section {
 .favorites {
 	width: 100%-10px;
 	overflow-y: hidden;
-	padding: 0 5px 0 5px;
+	padding: 0 $photoheight*.025 0 $photoheight*.025;
 
 	ul {
 		width: $photoheight*12;
@@ -68,13 +69,22 @@ section {
 		
 			a{
 				text-decoration: none;
+				text-align: left;
+				text-indent: 5px;
+				width: $photoheight*.9;
+				height: 20px;
 				color: $maincolor;
 				position: absolute;
 				left: -$photoheight+$photoheight+10px;
 				top: $photoheight;
+				background-color: black;
 
 				&:hover {
 					color: $linkcolor;
+				}
+
+				b {
+				
 				}
 			}
 
@@ -82,7 +92,6 @@ section {
 				position: relative;
 				width: $photoheight;
 				height: $photoheight;
-				width: $photoheight;
 				opacity: .8;
 
 				&:hover {
@@ -92,7 +101,7 @@ section {
 
 			article {
 				position: absolute;
-				top: $photoheight*1.1+5px;
+				top: $photoheight*1.125;
 				text-indent: 10px;
 				width: 100%;
 				height: $photoheight;
