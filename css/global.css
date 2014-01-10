@@ -14,11 +14,11 @@
 
 /*Header*/
 header {
-  position: absolute;
+  position: relative;
   top: 0px;
   left: 40px;
   padding: 20px 30px;
-  font-color: #005d7b;
+  font-color: contrast(black);
   background: black;
   text-align: left;
 }
@@ -55,8 +55,9 @@ section {
   height: 200px;
   width: 200px;
   margin-left: 5px;
+  border-radius: 5px;
 }
-.favorites li b {
+.favorites li article {
   position: absolute;
   top: 180px;
   left: 10px;
