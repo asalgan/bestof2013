@@ -16,10 +16,14 @@
 header {
   position: relative;
   width: 100%;
-  font-color: contrast(black);
-  background: black;
+  background-color: black;
   text-align: left;
   height: 80px;
+  color: white;
+}
+header h2 {
+  font-size: 24pt;
+  padding: 5px;
 }
 
 /*Sections*/
@@ -39,7 +43,6 @@ header {
   margin-right: 40px;
   width: 200px;
   height: 400px;
-  border-radius: 5px;
 }
 .favorites ul li a {
   text-decoration: none;
@@ -56,6 +59,10 @@ header {
   width: 200px;
   height: 200px;
   width: 200px;
+  opacity: .8;
+}
+.favorites ul li img:hover {
+  opacity: 1;
 }
 .favorites ul li article {
   position: absolute;

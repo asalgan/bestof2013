@@ -33,10 +33,15 @@ body {
 header {
 	position: relative;
 	width: 100%;
-	font-color: contrast($fontcolor);
-	background: $othercolor;
+	background-color: $othercolor;
 	text-align: left;
 	height: 80px;
+	color: $nocolor;
+
+	h2 {
+		font-size: 24pt;
+		padding: 5px;
+	}
 }
 
 /*Sections*/
@@ -60,8 +65,7 @@ section {
 			margin-right: $photoheight*.2;
 			width: $photoheight;
 			height: $photoheight*2;
-			border-radius: 5px;
-
+		
 			a{
 				text-decoration: none;
 				color: $maincolor;
@@ -79,6 +83,11 @@ section {
 				width: $photoheight;
 				height: $photoheight;
 				width: $photoheight;
+				opacity: .8;
+
+				&:hover {
+					opacity: 1;
+				}
 			}
 
 			article {
