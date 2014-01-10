@@ -3,7 +3,7 @@
 
 $nocolor: #FFFFFF;
 $othercolor: #000000;
-$maincolor: darken(#48d3ff, 40%);
+$maincolor: darken(#C3D9FF, 10%);
 $linkcolor: lighten($maincolor, 20%);
 $fontcolor: black;
 $photoheight: 200px;
@@ -71,21 +71,30 @@ section {
 				text-decoration: none;
 				text-align: left;
 				text-indent: 5px;
-				width: $photoheight*.9;
+				width: 200px;
 				height: 20px;
-				color: $maincolor;
+				color: white;
 				position: absolute;
-				left: -$photoheight+$photoheight+10px;
+				left: -$photoheight+$photoheight;
 				top: $photoheight;
 				background-color: black;
+				opacity: .7;
+				padding: 3px 0;
+				text-align: center;
 
 				&:hover {
 					color: $linkcolor;
 				}
 
 				b {
-				
+					opacity: 1;
 				}
+
+			}
+
+			p{
+				margin: 15px;
+
 			}
 
 			img {
@@ -102,7 +111,6 @@ section {
 			article {
 				position: absolute;
 				top: $photoheight*1.125;
-				text-indent: 10px;
 				width: 100%;
 				height: $photoheight;
 				background-color: transparentize($maincolor, .5);
@@ -111,6 +119,9 @@ section {
 					position: relative;
 					font-style: italic;
 					top: 2px;
+					font-size:20px;
+					left: 10px;
+					top: 10px;
 				}
 			}
 		}
