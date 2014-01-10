@@ -25,16 +25,12 @@ header {
 /*Sections*/
 .favorites {
   width: 100% -10px;
-  overflow-x: scroll;
+  overflow-y: hidden;
   padding: 0 5px 0 5px;
 }
 .favorites ul {
   width: 2400px;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
   height: 400px;
-  padding: 5 5 5 5;
 }
 .favorites ul li {
   position: relative;
@@ -73,4 +69,9 @@ header {
   position: relative;
   font-style: italic;
   top: 2px;
+}
+
+.copyright {
+  position: absolute;
+  padding: 5px;
 }

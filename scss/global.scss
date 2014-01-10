@@ -46,17 +46,13 @@ section {
 
 .favorites {
 	width: 100%-10px;
-	overflow-x: scroll;
+	overflow-y: hidden;
 	padding: 0 5px 0 5px;
 
 	ul {
 		width: $photoheight*12;
-		overflow-x: scroll;
-		overflow-y: hidden;
-		white-space: nowrap;
 		height: $photoheight*2;
-		padding: 5 5 5 5;
-
+		
 		li {
 			position: relative;
 			padding: 25px 0 0 0;
@@ -101,4 +97,9 @@ section {
 			}
 		}
 	}
+}
+
+.copyright {
+	position: absolute;
+	padding: 5px;
 }
