@@ -1,3 +1,4 @@
+
 /* GENERAL */
 
 $nocolor: #FFFFFF;
@@ -11,18 +12,10 @@ body {
 	
 }
 
-a {
-	
-}
-
-img {
-	
-}
-
 .container {
 	position: relative;
 	margin: 0 auto;
-	max-width: 960px;
+	width: 960px;
 	font-color: $maincolor;
 }
 
@@ -39,56 +32,83 @@ img {
 
 header {
 	position: relative;
-	top: 0px;
-	left: 40px;
-	padding: 20px 30px;
-	font-color: contrast($fontcolor);
-	background: $othercolor;
+	width: 100%;
+	background-color: $othercolor;
 	text-align: left;
+	height: 80px;
+	color: $nocolor;
+
+	h2 {
+		font-size: 24pt;
+		padding: 5px;
+	}
 }
 
 /*Sections*/
 
 section {
-	width: auto;
-	padding: 25px;
-	text-align:relative;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	white-space: nowrap;
-	height: 400px;
 }
 
 .favorites {
-	li {
-		position: relative;
-		float: left;
-		margin-right: 5%;
-		width: auto;
-		height: 300px;
-		
-		a{
-			text-decoration: none;
-			color: $maincolor;
+	width: 100%-10px;
+	overflow-y: hidden;
+	padding: 0 5px 0 5px;
 
-			&:hover {
-				color: $linkcolor;
+	ul {
+		width: $photoheight*12;
+		height: $photoheight*2;
+		
+		li {
+			position: relative;
+			padding: 25px 0 0 0;
+			float: left;
+			margin-right: $photoheight*.2;
+			width: $photoheight;
+			height: $photoheight*2;
+		
+			a{
+				text-decoration: none;
+				color: $maincolor;
+				position: absolute;
+				left: -$photoheight+$photoheight+10px;
+				top: $photoheight;
+
+				&:hover {
+					color: $linkcolor;
+				}
+			}
+
+			img {
+				position: relative;
+				width: $photoheight;
+				height: $photoheight;
+				width: $photoheight;
+				opacity: .8;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+
+			article {
+				position: absolute;
+				top: $photoheight*1.1+5px;
+				text-indent: 10px;
+				width: 100%;
+				height: $photoheight;
+				background-color: transparentize($maincolor, .5);
+
+				i {
+					position: relative;
+					font-style: italic;
+					top: 2px;
+				}
 			}
 		}
-
-		img {
-			position: relative;
-			width: 100%;
-			height: $photoheight;
-			width: $photoheight;
-			margin-left: 5px;
-			border-radius: 5px;
-		}
-
-		article {
-			position: absolute;
-			top: $photoheight+-20;
-			left: 10px;
-		}
 	}
+}
+
+.copyright {
+	position: absolute;
+	padding: 5px;
 }
