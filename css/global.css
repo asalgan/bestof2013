@@ -14,7 +14,7 @@
 
 /*Header*/
 header {
-  position: absolute;
+  position: relative;
   width: 100%;
   font-color: contrast(black);
   background: black;
