@@ -4,6 +4,7 @@
   position: relative;
   margin: 0 auto;
   font-color: #aac9ff;
+  font-family: 'Chau Philomene One', sans-serif;
 }
 
 .group:after {
@@ -18,12 +19,14 @@ header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   text-align: left;
-  height: 80px;
+  height: 65px;
   color: white;
 }
+header h1 {
+  font-size: 10pt;
+}
 header h2 {
-  font-size: 40pt;
-  font-family: 'Chau Philomene One', sans-serif;
+  font-size: 30pt;
   padding: 10px;
 }
 
@@ -31,16 +34,16 @@ header h2 {
 .favorites {
   width: 100%;
   overflow-y: hidden;
-  height: 450px;
+  height: 317px;
 }
 .favorites ul {
-  width: 2400px;
+  width: 2000px;
   height: 400px;
 }
 .favorites ul li {
   position: relative;
   float: left;
-  margin-right: 30px;
+  margin-right: 0;
   width: 200px;
   height: 400px;
 }
@@ -54,11 +57,11 @@ header h2 {
 }
 .favorites ul li div p {
   position: relative;
-  top: -13px;
-  left: -9px;
+  top: -9px;
+  left: -4px;
   color: white;
 }
-.favorites ul li a {
+.favorites ul li a b {
   text-decoration: none;
   text-align: left;
   text-indent: 5px;
@@ -67,17 +70,14 @@ header h2 {
   color: white;
   position: absolute;
   left: 0px;
-  top: 200px;
+  top: 174px;
   background-color: black;
-  opacity: .7;
+  opacity: 1;
   padding: 3px 0;
   text-align: center;
 }
-.favorites ul li a:hover {
-  color: white;
-}
 .favorites ul li p {
-  margin: 15px;
+  padding: 10px;
 }
 .favorites ul li img {
   position: relative;
@@ -89,21 +89,18 @@ header h2 {
   opacity: 1;
 }
 .favorites ul li article {
-  position: absolute;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  top: 225px;
+  position: relative;
+  top: -2px;
   width: 100%;
   font-size: 10pt;
-  height: 200px;
+  height: 120px;
+  padding: 5px;
+}
+.favorites ul li .mike {
   background-color: #aac9ff;
 }
-.favorites ul li article i {
-  position: relative;
-  font-style: italic;
-  top: 2px;
-  font-size: 20px;
-  left: 10px;
-  top: 10px;
+.favorites ul li .alan {
+  background-color: #90b9ff;
 }
 
 .copyright {

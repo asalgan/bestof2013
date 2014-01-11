@@ -18,6 +18,7 @@ body {
 	position: relative;
 	margin: 0 auto;
 	font-color: $maincolor;
+	font-family: 'Chau Philomene One', sans-serif;
 }
 
 //Clearfix
@@ -36,12 +37,14 @@ header {
 	width: 100%;
 	background-color: $othercolor;
 	text-align: left;
-	height: 80px;
+	height: 65px;
 	color: $nocolor;
 
+	h1 {
+		font-size: 10pt;
+	}
 	h2 {
-		font-size: 40pt;
-		font-family: 'Chau Philomene One', sans-serif;
+		font-size: 30pt;
 		padding: 10px;
 	}
 }
@@ -56,16 +59,16 @@ section {
 	overflow-y: hidden;
 	//padding: 0 $photoheight*.025 0 $photoheight*.025;
 	//background-color: $bgcolor;
-	height: 450px;
+	height: $photoheight*1.5+17px;
 
 	ul {
-		width: $photoheight*12;
+		width: $photoheight*10;
 		height: $photoheight*2;
 		
 		li {
 			position: relative;
 			float: left;
-			margin-right: $photoheight*.15;
+			margin-right:0;
 			width: $photoheight;
 			height: $photoheight*2;
 
@@ -79,36 +82,32 @@ section {
 
 				p {
 					position: relative;
-					top: -13px;
-					left: -9px;
+					top: -9px;
+					left: -4px;
 					color: white;
 				}
 			}
 		
 			a {
-				text-decoration: none;
-				text-align: left;
-				text-indent: 5px;
-				width: 200px;
-				height: 20px;
-				color: $linkcolor;
-				position: absolute;
-				left: -$photoheight+$photoheight;
-				top: $photoheight;
-				background-color: black;
-				opacity: .7;
-				padding: 3px 0;
-				text-align: center;
-
-				&:hover {
-					color: white;
+				b {
+					text-decoration: none;
+					text-align: left;
+					text-indent: 5px;
+					width: 200px;
+					height: 20px;
+					color: $linkcolor;
+					position: absolute;
+					left: -$photoheight+$photoheight;
+					top: $photoheight+-26px;
+					background-color: black;
+					opacity: 1;
+					padding: 3px 0;
+					text-align: center;
 				}
-				
-
 			}
 
 			p{
-				margin: 15px;
+				padding: 10px;
 			}
 
 			img {
@@ -123,23 +122,20 @@ section {
 			}
 
 			article {
-				position: absolute;
-				font-family: "Trebuchet MS", Helvetica, sans-serif;
-				top: $photoheight*1.125;
+				position: relative;
+				top:-2px;
 				width: 100%;
 				font-size: 10pt;
-				height: $photoheight;
-				background-color: $maincolor;
+				height: $photoheight/2 + 20px;
+				padding: 5px;
+			}
 
-				i {
-					position: relative;
-					font-style: italic;
-					
-					top: 2px;
-					font-size:20px;
-					left: 10px;
-					top: 10px;
-				}
+			.mike {
+				background-color: $maincolor;
+			}
+
+			.alan {
+				background-color: darken($maincolor, 5%);
 			}
 		}
 	}
