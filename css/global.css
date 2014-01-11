@@ -114,3 +114,10 @@ header h2 {
   color: white;
   text-decoration: none;
 }
+
+.scroll {
+  float: right;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 10px;
+}
