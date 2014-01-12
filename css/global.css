@@ -100,6 +100,10 @@ header h2 {
   background-color: #90b9ff;
 }
 
+footer {
+  position: relative;
+}
+
 .copyright {
   padding: 5px 10px 10px 5px;
   position: fixed;
@@ -135,11 +139,16 @@ header h2 {
   padding: 2px;
   padding-bottom: 10px;
   font-size: 12pt;
+  width: 300px;
 }
 
 .scroll {
+  position: relative;
   float: right;
-  text-decoration: none;
+  text-align: right;
   padding: 5px;
+  font-size: 12pt;
   margin-right: 10px;
+  color: white;
+  z-index: 1;
 }
