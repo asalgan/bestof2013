@@ -1,187 +1,102 @@
+/* BACKGROUND IMAGES */
 
-/* GENERAL */
-
-$nocolor: #FFFFFF;
-$othercolor: transparentize(#000000, .3);
-$bgcolor: transparentize($othercolor, .5);
-$maincolor: darken(#C3D9FF, 5%);
-$fontcolor: black;
-$photoheight: 200px;
-
-body {
-	
+#a {
+  background-image: url(../oscar3.jpg);
 }
 
-.container {
-	width: 100%;
-	position: relative;
-	margin: 0 auto;
-	font-color: $maincolor;
-	font-family: 'Chau Philomene One', sans-serif;
+#b {
+  background-image: url(../oscar2.jpg);
 }
 
-//Clearfix
-.group {
-	&:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
+#c {
+  background-image: url(../oscar1.jpg);
 }
 
-/*Header*/
+#d {
+  background-image: url(../oscar.jpg);
+}
 
 header {
-	position: relative;
-	width: 100%;
-	background-color: $othercolor;
-	text-align: left;
-	height: 80px;
-	color: $nocolor;
+  		position: fixed;
+        width: 100%;
+        background-color: black;
+        text-align: left;
+        height: 40px;
+        color: white;
+        z-index: 1000;
+        opacity: .8;
 
-	h2 {
-		font-size: 30pt;
-		padding: 20px;
-	}
+        h1 {
+                font-size: 20px;
+                text-align: center;
+                padding-top: 10px;
+                font-family: 'Raleway', sans-serif;
+        }
 }
 
-/*Sections*/
-
-section {
+.box {
+	background-size:250px 200px;
+	background-repeat:no-repeat;
+	z-index:1010;
+	width: 250px;
+	height: 200px;	
+	opacity: .9
 }
 
-.favorites {
-	width: 100%;
-	overflow-y: hidden;
-	//padding: 0 $photoheight*.025 0 $photoheight*.025;
-	//background-color: $bgcolor;
-	height: $photoheight*1.5+17px;
-
-	ul {
-		width: $photoheight*10;
-		height: $photoheight*2;
-		
-		li {
-			position: relative;
-			float: left;
-			margin-right:0;
-			width: $photoheight;
-			height: $photoheight*2;
-
-			div {
-				z-index: 1;
-				position: absolute;
-				background-color: $othercolor;
-				height: 20px;
-				width: 25px;
-				opacity: .8;
-
-				p {
-					position: relative;
-					top: -9px;
-					left: -4px;
-					color: white;
-				}
-			}
-		
-			a {
-				b {
-					text-decoration: none;
-					text-align: left;
-					text-indent: 5px;
-					width: 200px;
-					height: 20px;
-					color: white;
-					position: absolute;
-					left: -$photoheight+$photoheight;
-					top: $photoheight+-26px;
-					background-color: black;
-					opacity: 1;
-					padding: 3px 0;
-					text-align: center;
-				}
-			}
-
-			p{
-				padding: 10px;
-			}
-
-			img {
-				position: relative;
-				width: $photoheight;
-				height: $photoheight;
-				opacity: .7;
-
-				&:hover {
-					opacity: 1;
-				}
-			}
-
-			article {
-				position: relative;
-				top:-2px;
-				width: 100%;
-				font-size: 10pt;
-				height: $photoheight/2 + 20px;
-				padding: 5px;
-			}
-
-			.mike {
-				background-color: $maincolor;
-			}
-
-			.alan {
-				background-color: darken($maincolor, 5%);
-			}
-		}
-	}
+.article {
+	font-size:15px;
+	padding:10px;
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.5;
 }
 
-.copyright {
-	padding: 5px 10px 10px 5px;
-	position: fixed;
-	background-color: $othercolor;
-	width: 100%;
-	height: 200px;
-	color: white;
-	text-decoration: none;
-	font-size: 10pt;
-
-	a {
-		padding: 2px;
-		text-decoration: none;
-		&:link {
-			color: $maincolor;
-		}
-
-		&:hover {
-			color: white;
-		}
-
-		&:active {
-			color: grey;
-		}
-
-		&:visited {
-			color: darken($maincolor, 20%);
-		}
-
-	}
+.content1, content3 {
+	border: 1px solid #f28066;
 }
 
-.SS {
-	padding: 2px;
-}
-
-.names {
-	padding: 2px;
-	padding-bottom: 10px;
-	font-size: 12pt;
-}
-
-.scroll {
+.content, .content1 {
+	border:1px solid #12b3ab;
+	width: 250px;
 	float: right;
-	text-decoration: none;
-	padding: 5px;
-	margin-right: 10px;
+	margin-right: 50px;
+
+	 .box1 {
+	 	@extend .box;
+		background-image: url(http://media.screened.com/uploads/0/183/576822-sandw.jpg);
+	}
+
+	.box2 {
+		@extend .box;
+		background-image: url(http://static1.wikia.nocookie.net/__cb20101201224652/muppet/images/thumb/b/be/Gangstersbenny.jpg/302px-Gangstersbenny.jpg);
+
+	}
+
+	.box3 {
+	 	@extend .box;
+		background-image: url(http://31.media.tumblr.com/tumblr_llboxeozNC1qjed1zo1_500.jpg);
+	}
+
+	.box4 {
+	 	@extend .box;
+		background-image: url(http://www.demeterclarc.com/wp-content/uploads/images/2013/02/MISS-PIGGY-AND-KERMIT.jpg);
+	}
+
+	.article1  {
+		@extend .article;
+		background-color: #f28066;
+	}
+
+	.article2 {
+		@extend .article;
+		background-color: #12b3ab;
+	}
 }
+
+.content2, .content3 {
+	float: left;
+	margin-left: 150px;
+}
+
+.content1, .content3 {
+	border:1px solid #f28066;
+	}
