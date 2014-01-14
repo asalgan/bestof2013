@@ -52,11 +52,27 @@ header h1 {
   border: 1px solid #f28066;
 }
 
+<<<<<<< HEAD
 .content, .content1 {
   border: 1px solid #12b3ab;
   width: 250px;
   float: right;
   margin-right: 50px;
+=======
+footer {
+  position: relative;
+}
+
+.copyright {
+  padding: 5px 10px 10px 5px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 200px;
+  color: white;
+  text-decoration: none;
+  font-size: 10pt;
+>>>>>>> 56486d1ebe53fa8d6d796e9647c537e2aeff5a22
 }
 .content .box1, .content1 .box1 {
   background-image: url(http://media.screened.com/uploads/0/183/576822-sandw.jpg);
@@ -77,6 +93,7 @@ header h1 {
   background-color: #12b3ab;
 }
 
+<<<<<<< HEAD
 .content2, .content3 {
   float: left;
   margin-left: 150px;
@@ -84,4 +101,22 @@ header h1 {
 
 .content1, .content3 {
   border: 1px solid #f28066;
+=======
+.names {
+  padding: 2px;
+  padding-bottom: 10px;
+  font-size: 12pt;
+  width: 300px;
+}
+
+.scroll {
+  position: relative;
+  float: right;
+  text-align: right;
+  padding: 5px;
+  font-size: 12pt;
+  margin-right: 10px;
+  color: white;
+  z-index: 1;
+>>>>>>> 56486d1ebe53fa8d6d796e9647c537e2aeff5a22
 }
