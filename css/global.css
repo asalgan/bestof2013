@@ -1,66 +1,103 @@
-/* BACKGROUND IMAGES */
-#a {
-  background-image: url(../oscar3.jpg);
-}
-
-#b {
-  background-image: url(../oscar2.jpg);
-}
-
-#c {
-  background-image: url(../oscar1.jpg);
-}
-
-#d {
-  background-image: url(../oscar.jpg);
-}
-
-header {
-  position: fixed;
+/* GENERAL */
+.container {
   width: 100%;
-  background-color: black;
+  position: relative;
+  margin: 0 auto;
+  font-color: #aac9ff;
+  font-family: 'Chau Philomene One', sans-serif;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Header*/
+header {
+  position: relative;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
   text-align: left;
-  height: 40px;
+  height: 80px;
   color: white;
-  z-index: 1000;
+}
+header h2 {
+  font-size: 30pt;
+  padding: 20px;
+}
+
+/*Sections*/
+.favorites {
+  width: 100%;
+  overflow-y: hidden;
+  height: 317px;
+}
+.favorites ul {
+  width: 2000px;
+  height: 400px;
+}
+.favorites ul li {
+  position: relative;
+  float: left;
+  margin-right: 0;
+  width: 200px;
+  height: 400px;
+}
+.favorites ul li div {
+  z-index: 1;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 20px;
+  width: 25px;
   opacity: .8;
 }
-header h1 {
-  font-size: 20px;
-  text-align: center;
-  padding-top: 10px;
-  font-family: 'Raleway', sans-serif;
-}
-
-.box, .content .box1, .content1 .box1, .content .box2, .content1 .box2, .content .box3, .content1 .box3, .content .box4, .content1 .box4 {
-  background-size: 250px 200px;
-  background-repeat: no-repeat;
-  z-index: 1010;
-  width: 250px;
-  height: 200px;
-  opacity: 0.9;
-}
-
-.article, .content .article1, .content1 .article1, .content .article2, .content1 .article2 {
-  font-size: 15px;
-  padding: 10px;
-  font-family: 'Raleway', sans-serif;
-  line-height: 1.5;
-}
-
-.content1, content3 {
-  border: 1px solid #f28066;
-}
-
-<<<<<<< HEAD
-.content, .content1 {
-  border: 1px solid #12b3ab;
-  width: 250px;
-  float: right;
-  margin-right: 50px;
-=======
-footer {
+.favorites ul li div p {
   position: relative;
+  top: -9px;
+  left: -4px;
+  color: white;
+}
+.favorites ul li a b {
+  text-decoration: none;
+  text-align: left;
+  text-indent: 5px;
+  width: 200px;
+  height: 20px;
+  color: white;
+  position: absolute;
+  left: 0px;
+  top: 174px;
+  background-color: black;
+  opacity: 1;
+  padding: 3px 0;
+  text-align: center;
+}
+.favorites ul li p {
+  padding: 10px;
+}
+.favorites ul li img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  opacity: .7;
+}
+.favorites ul li img:hover {
+  opacity: 1;
+}
+.favorites ul li article {
+  position: relative;
+  top: -2px;
+  width: 100%;
+  font-size: 10pt;
+  height: 120px;
+  padding: 5px;
+}
+.favorites ul li .mike {
+  background-color: #aac9ff;
+}
+.favorites ul li .alan {
+  background-color: #90b9ff;
 }
 
 .copyright {
@@ -72,51 +109,37 @@ footer {
   color: white;
   text-decoration: none;
   font-size: 10pt;
->>>>>>> 56486d1ebe53fa8d6d796e9647c537e2aeff5a22
 }
-.content .box1, .content1 .box1 {
-  background-image: url(http://media.screened.com/uploads/0/183/576822-sandw.jpg);
+.copyright a {
+  padding: 2px;
+  text-decoration: none;
 }
-.content .box2, .content1 .box2 {
-  background-image: url(http://static1.wikia.nocookie.net/__cb20101201224652/muppet/images/thumb/b/be/Gangstersbenny.jpg/302px-Gangstersbenny.jpg);
+.copyright a:link {
+  color: #aac9ff;
 }
-.content .box3, .content1 .box3 {
-  background-image: url(http://31.media.tumblr.com/tumblr_llboxeozNC1qjed1zo1_500.jpg);
+.copyright a:hover {
+  color: white;
 }
-.content .box4, .content1 .box4 {
-  background-image: url(http://www.demeterclarc.com/wp-content/uploads/images/2013/02/MISS-PIGGY-AND-KERMIT.jpg);
+.copyright a:active {
+  color: grey;
 }
-.content .article1, .content1 .article1 {
-  background-color: #f28066;
-}
-.content .article2, .content1 .article2 {
-  background-color: #12b3ab;
+.copyright a:visited {
+  color: #4388ff;
 }
 
-<<<<<<< HEAD
-.content2, .content3 {
-  float: left;
-  margin-left: 150px;
+.SS {
+  padding: 2px;
 }
 
-.content1, .content3 {
-  border: 1px solid #f28066;
-=======
 .names {
   padding: 2px;
   padding-bottom: 10px;
   font-size: 12pt;
-  width: 300px;
 }
 
 .scroll {
-  position: relative;
   float: right;
-  text-align: right;
+  text-decoration: none;
   padding: 5px;
-  font-size: 12pt;
   margin-right: 10px;
-  color: white;
-  z-index: 1;
->>>>>>> 56486d1ebe53fa8d6d796e9647c537e2aeff5a22
 }
